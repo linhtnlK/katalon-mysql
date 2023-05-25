@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "5675ADFAF94AE9471164A402A068E738",
+  "keywordClasses": [
+    {
+      "name": "KatalonCustomKeywords",
+      "keywordMethods": [
+        {
+          "name": "customPrint",
+          "parameters": [
+            {
+              "name": "text",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Separate a large text into small\n\t * @param text the text \n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

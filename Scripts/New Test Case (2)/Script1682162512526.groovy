@@ -17,8 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+//CustomKeywords.'KatalonCustomKeywords.customPrint'(GlobalVariable.json)
+int maxSize = 30000
+int cursor = 0
+while (cursor < GlobalVariable.json.length()) {
+    int start = cursor
 
-WebUI.navigateToUrl('google.com')
+    cursor += maxSize
 
-WebUI.closeBrowser()
+    if (cursor > GlobalVariable.json.length()) {
+        cursor = GlobalVariable.json.length()
+    }
+    
+    print (GlobalVariable.json.substring(start, cursor))
+}
